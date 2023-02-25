@@ -155,17 +155,17 @@ padding-left: 3em;
 }
 
 .servicos-card-texto{
-	padding: 6vh 3vw 1vh 6vw;
+	padding: 5vh 3vw 1vh 5vw;
 	
 }
 
 .servicos-card-texto2{
-	padding: 6vh 3vw 6vh 6vw;
+	padding: 5vh 3vw 5vh 5vw;
 }
 
 .servicos-card-imagem{
 	border-radius: 2vw 0vw 0vw 2vw;
-	width: 40%;
+	width: 45%;
 	box-shadow: #3232326b -20px -20px 50px;
 }
 
