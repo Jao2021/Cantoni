@@ -1,0 +1,382 @@
+/* VARIAVEIS */ 
+:root {
+  --cinza-escuro: #211F1F;
+  --cinza-principal: #323232;
+  --vermelho: #EF2626;
+  --vermelho-hover: #cf2728;
+  --tamanho-fonte: 16px;
+  --fonte-principal: "Kanit";
+	--swiper-theme-color: #3c3e40;
+}
+
+
+
+/* MENU DO SITE */
+
+.menu {
+	background-color: var(--cinza-escuro);
+	display: flex;
+	justify-content: space-between;
+	padding: 1.5vh 6vw;
+	align-items: center;
+	
+}
+
+.menu-abas{
+	display: flex;
+	
+}
+
+.menu-abas-items{
+padding-left: 3em;
+}
+
+.menu-abas-items a{
+	font-family: var(--fonte-principal);
+	color: white;
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom-color 0.2s ease-in-out;
+	
+}
+
+
+.contatar a{
+	background-color: var(--vermelho);
+	padding: 0.2em 2em;
+	border-radius: 0.5em;
+}
+
+.menu-abas-items a:hover{
+	border-bottom: 1px var(--vermelho) solid;
+	
+}
+
+
+
+.contatar a:hover, .banner-botao:hover{
+	background-color: var(--vermelho-hover);
+}
+
+.logo-cantoni{
+	width: 350px;
+	
+}
+
+/* PRIMEIRA ABA DO SITE - BANNER */
+
+.banner{
+	height: 65vh;
+	background: url(img/hero_background.png) center right / contain no-repeat var(--cinza-principal);
+	display: flex;
+	align-items: center;
+	
+
+}
+
+.banner-textos{
+	width: 35%;
+	padding-left: 6vw;
+	font-family: var(--fonte-principal);
+	color: white;
+}
+
+.banner-titulo {
+	font-weight: 400;
+	font-size: 2.5vw;
+}
+
+.banner-subtitulo{
+	font-weight: 200;
+	padding: 1em 0 2em 0;
+	font-size: 1.5vw;
+}
+
+.banner-botao{
+	padding: 0.5em 6vw;
+	background-color: var(--vermelho);
+	color: white;
+	text-decoration: none;
+	font-size: 1.2vw;
+	border-radius: 0.5em;
+	
+}
+
+/* SEGUNDA ABA DO SITE - SOBRE*/
+
+
+.sobre{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 3vh 6vw;
+
+}
+
+.sobre-texto {
+	font-family: var(--fonte-principal);
+	font-size: 1.1vw;
+	font-weight: 200;
+	line-height: 160%; 
+	width: 45vw;
+}
+
+.sobre-imagem{
+	width: 35vw;
+}
+	
+/* TERCEIRA ABA DO SITE - SERVIÇOS */
+
+.servicos {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #323232;
+	color: white;
+	font-family: var(--fonte-principal);
+	padding: 10vh 6vw;
+
+}
+
+.servicos h3 {
+	font-size: 1.5vw;
+	padding-bottom: 4vh;
+}
+
+.servicos-card {
+	display: flex;
+	background-color: white;
+	color: var(--cinza-principal);
+	font-weight: 200;
+	font-size: 1.1vw;
+	border-radius: 2vw;
+	width: 100%;
+	
+}
+
+.servicos-card-texto{
+	padding: 6vh 3vw 1vh 6vw;
+	
+}
+
+.servicos-card-texto2{
+	padding: 6vh 3vw 6vh 6vw;
+}
+
+.servicos-card-imagem{
+	border-radius: 2vw 0vw 0vw 2vw;
+	width: 40%;
+	box-shadow: #3232326b -20px -20px 50px;
+}
+
+/* CARROSSEL */
+
+.swiper-pagination {
+    text-align: left;
+    transition: .3s opacity;
+    transform: translate3d(0,0,0);
+    z-index: 10;
+	position: initial;
+	padding-top: 3vh;
+	
+}
+
+.swiper-pagination-bullet {
+    width: 0.7vw;
+    height: 1.4vh;
+	
+	display: inline-block;
+    border-radius: 50%;
+   
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-right: 0.3vw;
+}
+	
+/* QUARTA ABA DO SITE - CONTATOS */	
+
+.contato{
+	background-color: #f1f1f1;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 5vh 6vw;
+}
+
+.contato-formulario, .contato-informacoes{
+	background-color: #ffffff;
+	border-radius: 1vw;
+	width: 30vw;
+	padding: 5vh 2.5vw;
+}
+
+.contato-formulario h3, .contato-informacoes h3{
+	font-family: var(--fonte-principal);
+	font-size: 1.5vw;
+	font-weight: 700;
+	padding-bottom: 2vh;
+	
+}
+
+.contato-informacoes h3{
+	border-bottom: 0.3vw red solid;
+	width: 45%;
+}
+
+.contato-formulario-campos{
+	display: flex;
+	flex-direction: column;
+}
+
+.contato-formulario-campos-input{
+	padding: 1.5vh;
+	margin-bottom: 1vh;
+	border-radius: 0.3vw;
+	border: none;
+	background-color: #ebebeb;
+	
+}
+
+.contato-formulario-campos-input::placeholder{
+	color: #BBBBBB;
+	font-family: var(--fonte-principal);
+	outline-color: lightgray;
+}
+
+.contato-formulario-campos-input:focus{
+	color: #BBBBBB;
+	font-family: var(--fonte-principal);
+		outline-color: lightgray;			
+}
+	
+.contato-formulario-campos-input:not(:focus) {
+	color: #BBBBBB;
+	font-family: var(--fonte-principal);
+	outline-color: lightgray;
+}
+
+.contato-formulario-campos-botao{
+	background-color: var(--vermelho);
+	color: white;
+	padding: 1vh;
+	border-radius: 2vw;
+	border: none;
+	font-family: var(--fonte-principal);
+	font-size: 0.9vw;
+	margin-top: 4.0vh;
+	
+}
+
+.contato-formulario-campos-botao:hover{
+	background-color: var(--vermelho-hover);
+	
+}
+
+.contato-informacoes-lista{
+	margin-top: 1vh;
+}
+
+.contato-informacoes-lista li{
+	display: flex;
+	padding: 2vh 0vw;
+}
+
+
+li p::before{
+	content: "";
+	padding: 0vh 0.7vw;
+	background-color: #cf2728;
+	border-radius: 100%;
+	margin-right: 0.8vw;
+}
+
+li p {
+	font-family: var(--fonte-principal);
+	font-size: 1vw;
+	padding: 1vh 1vh;
+}
+
+.contato-socialicons{
+	margin-top: 3vh;
+}
+
+.contato-socialicons .fa-brands{
+	color: white;
+	font-size: 1.5vw;
+	padding: 0.5vw;
+	background-color: #cf2728;
+	border-radius: 50%;
+	margin: 1vh 0.5vw;
+}
+
+.contato-socialicons .fa-brands:hover{
+	background-color: #ac0f0f;
+	transition: .3s;
+	cursor: pointer;
+}
+
+
+
+
+/* QUINTA ABA DO SITE - RODAPE */	
+
+footer{
+	height: 38vh;
+	background-color: var(--cinza-escuro);
+}
+
+footer .rodape{
+	display: grid;
+	justify-content: center;
+	padding: 5.5vh 6vw;
+}
+
+.icon-rodape{
+	display: flex;
+	justify-content: center;
+	padding: 3.5vh 2.0vw;
+}
+
+
+
+ .icon-rodape .fa-brands{
+	padding: 1vh 1.1vh;
+	background-color: #cf2728;
+	border-radius: 50%;
+	margin: 0.7vh;
+	color: white;
+	font-size: 1.5vw;
+}
+
+.icon-rodape .fa-brands:hover{
+	background-color: #ac0f0f;
+	transition: .3s;
+	cursor: pointer;
+}
+
+
+
+
+.menu-rodape{
+	display: flex;
+	justify-content: center;
+	margin-left: 0.4vw;
+}
+
+
+.rodape-items{
+	padding-left: 0.9vw;
+}
+
+.rodape-items a{
+	font-weight: 300;
+	font-family: var(--fonte-principal);
+	color: white;
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom-color 0.2s ease-in-out;
+}
+
+.rodape-items a:hover{
+	border-bottom: 1px var(--vermelho) solid;
+}
