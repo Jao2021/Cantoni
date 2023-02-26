@@ -269,7 +269,8 @@ padding-left: 3em;
 
 .contato-formulario-campos-botao:hover{
 	background-color: var(--vermelho-hover);
-	
+    cursor: pointer;
+    transition: .3s	
 }
 
 .contato-informacoes-lista{
@@ -303,7 +304,7 @@ li p {
 .contato-socialicons .fa-brands{
 	color: white;
 	font-size: 1.5vw;
-	padding: 0.5vw;
+	padding: 0.7vw;
 	background-color: #cf2728;
 	border-radius: 50%;
 	margin: 1vh 0.5vw;
@@ -340,7 +341,7 @@ footer .rodape{
 
 
  .icon-rodape .fa-brands{
-	padding: 1vh 1.1vh;
+	padding: 1.3vh 1.4vh;
 	background-color: #cf2728;
 	border-radius: 50%;
 	margin: 0.7vh;
