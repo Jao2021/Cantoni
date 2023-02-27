@@ -29,12 +29,17 @@
 	   
 		<nav class="menu">
 			<img src="img/logo.svg" alt="Logo da empresa Cantoni Engenharia" class="logo-cantoni">
-
+			<div class="mobile-menu">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
 			<ul class="menu-abas">
-			  <li class="menu-abas-items" ><a href="#">Sobre</a></li>
-			  <li class="menu-abas-items "><a href="#">Serviços</a></li>
-			  <li class="menu-abas-items contatar"><a href="#">CONTATAR</a></li>
+			  <li class="menu-abas-items" ><a href="#sobre">Sobre</a></li>
+			  <li class="menu-abas-items "><a href="#servicos">Serviços</a></li>
+			  <li class="menu-abas-items contatar"><a href="#contato">CONTATAR</a></li>
 			</ul>
+
 
 		</nav>
 	   
@@ -44,14 +49,14 @@
 			<div class="banner-textos">
 	   		<h1 class="banner-titulo">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
 			<h2 class="banner-subtitulo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel tellus laoreet, gravida justo sed, pellentesque elit.</h2>
-			<a href="#" class="banner-botao">FALE CONOSCO</a>
+			<a href="#contato" class="banner-botao">FALE CONOSCO</a>
 			</div>
 	   </section>
   </header>
 	  
 <!-- SEGUNDA ABA DO SITE - SOBRE -->
 	  
- <section class="sobre">
+ <section id="sobre"  class="sobre">
 		  <p class="sobre-texto"> A <b>Cantoni Engenharia</b> é especializada em serviços de engenharia mecânica. Foi criada e vem sendo gerenciada para cumprir a função de prestar serviços de engenharia destinados a atender às necessidades de seus clientes com qualidade, confiabilidade e com o melhor custo-benefício.
 		<br/><br/>
 		Oferecemos soluções sempre com análise técnica, projetos mecânicos e elaboração de laudos técnicos com ART conforme a necessidade e demanda dos nossos clientes, seguindo de forma rigorosa as leis e normas técnicas vigentes, garantindo assim a segurança necessária ao realizar o serviço.
@@ -62,7 +67,7 @@
   </section>
 	
 <!-- TERCEIRA ABA DO SITE - SERVIÇOS -->	  
- <section class="servicos">
+ <section id="servicos" class="servicos">
 	<h3> Principais serviços </h3>
 	  
 	<!-- Slider main container -->
@@ -153,8 +158,7 @@
 								<li>- Fornecimento de ART dos serviços prestados.</li>
 							</ul>
 						</p>
-						<!-- If we need pagination -->
-						  <div class="swiper-pagination"></div>
+						
 					 </div>
 				</div>
 
@@ -177,8 +181,7 @@
 							Atendemos: Buffets Infantis, playgrounds, escolas, condomínios, parques, restaurantes, fast food, empresas de locações, fabricantes de Brinquedos e etc...
 							
 							</p>
-						<!-- If we need pagination -->
-						  <div class="swiper-pagination"></div>
+						
 					 </div>
 				</div>
 				
@@ -209,8 +212,7 @@
 							f) Prestar todas as informações requeridas pela fiscalização do Conselho Regional que digam respeito ao regular exercício das atividades de engenharia e agronomia desenvolvidas pela pessoa jurídica.
 							<br><br>
 						</p>
-						<!-- If we need pagination -->
-						  <div class="swiper-pagination"></div>
+						
 					 </div>
 				</div>
 
@@ -221,13 +223,12 @@
 					<img src="img/desmanche.webp" class="servicos-card-imagem">
 					<div class="servicos-card-texto">
 						   <h3>Responsabilidade Técnica para Desmanches e Desmonte</h3>
-						   	<h4>
+						   <p>
 							Você sabia que de acordo com o artigo 7 da resolução CONTRAN 611 de 24/05/2016, é necessário possuir um responsável técnico junto ao conselho 
-							regional de engenharia e agronomia- CREA para o exército de suas funções?</h4>
+							regional de engenharia e agronomia- CREA para o exército de suas funções?
 							<br>
-							<h4>O que diz a Resolução N° 611 do CONTRAN</h4>
 							<br>
-							<p>
+							
 							Art. 7º A fiscalização in loco do órgão ou entidade executivo de trânsito do Estado ou do Distrito Federal, prevista no § 7º do art.4º da 
 							Lei nº 12.977, de 20 de maio de 2014, aferirá a conformidade da estrutura e das atividades da empresa de desmontagem, devendo referida empresa:
 							<br>
@@ -246,8 +247,7 @@
 							<br><br>
 							VI – possuir capacitação técnica; e VII – apresentar relação de empregados e ajudantes, em caráter permanente ou eventual, devidamente qualificados.
 							</p>
-						<!-- If we need pagination -->
-						  <div class="swiper-pagination"></div>
+						
 					 </div>
 				</div>
 
@@ -281,8 +281,7 @@
 							</p>
 							
 							
-							<!-- If we need pagination -->
-						  <div class="swiper-pagination"></div>
+							
 					 </div>
 					 	
 				</div>
@@ -298,7 +297,7 @@
 	 
 <!-- QUARTA ABA DO SITE - CONTATOS -->	
 	  
-<section class="contato"> 
+<section id="contato" class="contato"> 
 	
 	<div class="contato-formulario">
 		<h3>Solicite seu Orçamento</h3>
@@ -356,9 +355,9 @@
 		</div>
 		<div class="menu-rodape">
 			<ul class="menu-abas">
-				<li class="rodape-items" ><a href="#">Sobre</a></li>
-				<li class="rodape-items"><a href="#">Serviços</a></li>
-				<li class="rodape-items"><a href="#">Contatar</a></li>
+				<li class="rodape-items" ><a href="#sobre">Sobre</a></li>
+				<li class="rodape-items"><a href="#servicos">Serviços</a></li>
+				<li class="rodape-items"><a href="#contato">Contatar</a></li>
 			</ul>
 		</div>
 	</div>
@@ -393,6 +392,50 @@
          type: 'bullets',
      },
     });
+
+	class MobileNavbar {
+		constructor(mobileMenu, navList, navLinks) {
+		this.mobileMenu = document .querySelector (mobileMenu) ;
+		this.navList = document.querySelector(navList) ;
+		this.navLinks = document.querySelectorAll(navLinks);
+		this.activeClass = "active";
+		this.handleClick = this.handleClick.bind(this);
+		}
+
+		animateLinks() {
+			this.navLinks.forEach((link, index) => {
+			link.style.animation
+				? (link.style.animation = "")
+				: (link.style.animation = `navLinkFade 0.3s ease forwards ${
+					index / 7 + 0.3
+				}s`);
+			});
+		}
+
+
+		handleClick() {
+			this.navList.classList.toggle(this.activeClass);
+			this.mobileMenu.classList.toggle(this.activeClass);
+			this.animateLinks();
+		}
+		addClickEvent(){
+			this.mobileMenu.addEventListener("click", this.handleClick);
+		}
+
+		init(){
+			if (this.mobileMenu){
+				this.addClickEvent();
+			}
+			return this;
+		}
+	}
+
+	const mobileNavbar = new MobileNavbar(
+		".mobile-menu",
+		".menu-abas",
+		".menu-abas-items .contatar",
+	);
+	mobileNavbar.init();
     </script>
 	  
 	 

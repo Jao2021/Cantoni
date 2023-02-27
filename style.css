@@ -1,3 +1,10 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
 /* VARIAVEIS */ 
 :root {
   --cinza-escuro: #211F1F;
@@ -22,6 +29,18 @@
 	
 }
 
+.mobile-menu{
+	cursor: pointer;
+	display: none;
+}
+
+.mobile-menu div{
+	width: 27px;
+	height: 2px;
+	background-color: white;
+	margin: 7px;
+}
+
 .menu-abas{
 	display: flex;
 	
@@ -38,8 +57,8 @@ padding-left: 3em;
 	border-bottom: 1px solid transparent;
 	transition: border-bottom-color 0.2s ease-in-out;
 	
+	
 }
-
 
 .contatar a{
 	background-color: var(--vermelho);
@@ -57,6 +76,8 @@ padding-left: 3em;
 .contatar a:hover, .banner-botao:hover{
 	background-color: var(--vermelho-hover);
 }
+
+
 
 .logo-cantoni{
 	width: 350px;
@@ -110,7 +131,7 @@ padding-left: 3em;
 	align-items: center;
 	justify-content: space-between;
 	padding: 3vh 6vw;
-
+	transition: .2s;
 }
 
 .sobre-texto {
@@ -351,7 +372,7 @@ footer .rodape{
 .menu-rodape{
 	display: flex;
 	justify-content: center;
-	margin-left: 0.4vw;
+	margin-left: 0.2vw;
 }
 
 
