@@ -6,7 +6,7 @@
   --vermelho-hover: #cf2728;
   --tamanho-fonte: 16px;
   --fonte-principal: "Kanit";
-	--swiper-theme-color: #3c3e40;
+	--swiper-theme-color: #323232;
 }
 
 
@@ -66,7 +66,7 @@ padding-left: 3em;
 /* PRIMEIRA ABA DO SITE - BANNER */
 
 .banner{
-	height: 65vh;
+	height: 60vh;
 	background: url(img/hero_background.png) center right / contain no-repeat var(--cinza-principal);
 	display: flex;
 	align-items: center;
@@ -169,16 +169,12 @@ padding-left: 3em;
 /* CARROSSEL */
 
 .swiper-pagination {
-    text-align: left;
-    transition: .3s opacity;
-    transform: translate3d(0,0,0);
-    z-index: 10;
-	position:initial;
-	padding-top: 3vh;
+	padding-left: 18vw;
+	padding-bottom: 2vh;
 	
 }
 
-.swiper-pagination-bullet {
+/* .swiper-pagination-bullet {
     width: 0.7vw;
     height: 1.4vh;
 	display: inline-block;
@@ -188,7 +184,7 @@ padding-left: 3em;
 
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     margin-right: 0.3vw;
-}
+} */
 	
 /* QUARTA ABA DO SITE - CONTATOS */	
 
@@ -317,7 +313,7 @@ li p {
 /* QUINTA ABA DO SITE - RODAPE */	
 
 footer{
-	height: 38vh;
+	height: 34vh;
 	background-color: var(--cinza-escuro);
 }
 
@@ -336,7 +332,7 @@ footer .rodape{
 
 
  .icon-rodape .fa-brands{
-	padding: 1vh 1.1vh;
+	padding: 1.2vh 1.3vh;
 	background-color: #cf2728;
 	border-radius: 50%;
 	margin: 0.7vh;
@@ -349,7 +345,6 @@ footer .rodape{
 	transition: .3s;
 	cursor: pointer;
 }
-
 
 
 

@@ -1,0 +1,23 @@
+@media screen and (max-width: 790px) and (max-height: 1024px){
+/* MENU */
+    .logo-cantoni{
+        width: 40%;
+        
+    }
+
+    .menu-abas-items{
+        padding-left: 3em;
+    }
+        
+    .menu-abas-items a{
+        font-family: var(--fonte-principal);
+        font-size: 15px;
+        color: white;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: border-bottom-color 0.2s ease-in-out;
+            
+    }
+
+
+}
