@@ -106,4 +106,56 @@
     .mobile-menu.active .line3{
         transform: rotate(45deg) translate(-4px, -6px);
     }
+
+    /* PRIMEIRA ABA DO SITE - BANNER */
+
+    .banner{
+        height: 25.3vh;
+        background: url(img/eng-mecanico-2.jpeg) center right / contain no-repeat;
+        display: flex;
+        align-items: center;
+    
+    }
+
+    /* SEGUNDA ABA DO SITE - SOBRE*/
+
+
+    .sobre{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2vh 6vw;
+        transition: .2s;
+    }
+
+    .sobre-texto {
+        font-family: var(--fonte-principal);
+        font-size: 1.3vw;
+        font-weight: 200;
+        line-height: 160%; 
+        width: 45vw;
+    }
+
+    /* TERCEIRA ABA DO SITE - SERVIÇOS */
+
+    .servicos {
+        background-color: #323232;
+        color: white;
+        font-family: var(--fonte-principal);
+        padding: 2vh 6vw;
+    
+    }
+
+    .servicos h3 {
+        font-size: 1.5vw;
+        padding-bottom: 1vh;
+    }
+
+    .servicos-card-texto{
+        padding: 2vh 3vw 4.6vh 5vw;
+        
+    }
+
+    /* QUARTA ABA DO SITE - CONTATOS */	
+
 }
