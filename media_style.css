@@ -66,8 +66,8 @@
         background-color: var(--cinza-escuro);
         flex-direction: column;
         align-items: center;
+        display: none;
         justify-content: space-evenly;
-        transform: translateX(100%);
         transition: transform 0.3s ease-in ;
     }
 
@@ -76,7 +76,7 @@
     }
 
     .menu-abas.active{
-        transform: translateX(0);
+        display: flex;
     }
     
     .contatar a{
@@ -236,7 +236,7 @@
     }
 
     .icon-rodape .fa-brands{
-        padding: 1.0vh 1.1vh;
+        padding: 1.1vh 1.1vh;
         background-color: #cf2728;
         border-radius: 50%;
         margin: 0.7vh;
