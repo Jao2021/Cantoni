@@ -47,7 +47,7 @@
 }
 
 
-@media  (max-width: 413px) and (max-height: 915px){
+@media  (max-width: 417px) and (max-height: 919px){
     /* MENU */
 
     body{
@@ -175,12 +175,96 @@
 
     .contato-formulario-campos-input{
         padding: 0.5vh;
+        font-size: 8px;
         margin-bottom: 1vh;
         border-radius: 0.3vw;
         border: none;
         background-color: #ebebeb;
         
     }
+
+    .contato-formulario-campos-botao{
+        background-color: var(--vermelho);
+        color: white;
+        padding: 1vh;
+        border-radius: 2vw;
+        border: none;
+        font-family: var(--fonte-principal);
+        font-size: 0.9vw;
+        margin-top: 1vh;
+    }
+
+
+    li p::before{
+        content: "";
+        padding: 0vh 0.8vw;
+        background-color: #cf2728;
+        border-radius: 100%;
+        margin-right: 0.8vw;
+    }
+
+
+    .contato-informacoes-lista li{
+        display: flex;
+        padding: 0.1vh 0vw;
+    }
+
+    .contato-socialicons{
+        margin-top: 2vh;
+    }
+
+    .contato-socialicons .fa-brands{
+        color: white;
+        font-size: 1.6vw;
+        padding: 0.7vw;
+        background-color: #cf2728;
+        border-radius: 50%;
+        margin: 1vh 0.5vw;
+    }
+
+    /* QUINTA ABA DO SITE - RODAPE */	
+
+    footer{
+        height: 28vh;
+        background-color: var(--cinza-escuro);
+    }
+
+    footer .rodape{
+        display: grid;
+        justify-content: center;
+        padding: 5vh 6vw;
+    }
+
+    .icon-rodape .fa-brands{
+        padding: 1.0vh 1.1vh;
+        background-color: #cf2728;
+        border-radius: 50%;
+        margin: 0.7vh;
+        color: white;
+        font-size: 3vw;
+    }
+
+    .menu-rodape-abas{
+        display: flex;
+        justify-content: center;
+        padding-left: 1vw;
+    }
+
+    .rodape-items{
+        padding-left: 2vw;
+    }
     
+    .rodape-items a{
+        font-weight: 300;
+        font-family: var(--fonte-principal);
+        color: white;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: border-bottom-color 0.2s ease-in-out;
+    }
+    
+    .rodape-items a:hover{
+        border-bottom: 1px var(--vermelho) solid;
+    }
 
 }
