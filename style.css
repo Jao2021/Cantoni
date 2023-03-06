@@ -2,9 +2,6 @@ html{
     scroll-behavior: smooth;
 }
 
-
-
-
 /* VARIAVEIS */ 
 :root {
   --cinza-escuro: #211F1F;
@@ -16,17 +13,13 @@ html{
 	--swiper-theme-color: #323232;
 }
 
-
-
-
-
 /* MENU DO SITE */
 
 .menu {
 	background-color: var(--cinza-escuro);
 	display: flex;
 	justify-content: space-between;
-	padding: 1.5vh 6vw;
+	padding: 1.5vh 8vw;
 	align-items: center;
 	
 }
@@ -59,7 +52,6 @@ padding-left: 3em;
 	border-bottom: 1px solid transparent;
 	transition: border-bottom-color 0.2s ease-in-out;
 	
-	
 }
 
 .contatar a{
@@ -74,11 +66,9 @@ padding-left: 3em;
 }
 
 
-
 .contatar a:hover, .banner-botao:hover{
 	background-color: var(--vermelho-hover);
 }
-
 
 
 .logo-cantoni{
@@ -93,13 +83,12 @@ padding-left: 3em;
 	background: url(img/hero_background.png) center right / contain no-repeat var(--cinza-principal);
 	display: flex;
 	align-items: center;
-	
 
 }
 
 .banner-textos{
 	width: 35%;
-	padding-left: 6vw;
+	padding-left: 8vw;
 	font-family: var(--fonte-principal);
 	color: white;
 }
@@ -132,7 +121,7 @@ padding-left: 3em;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 3vh 6vw;
+	padding: 8vh 12vw 8vh 8vw;
 	transition: .2s;
 }
 
@@ -145,9 +134,13 @@ padding-left: 3em;
 }
 
 .sobre-imagem{
-	width: 35vw;
-}
+	width: 22vw;
+	transform: rotate(45deg);
 	
+	box-shadow: #3a3a3a4d 0px 5px 20px;
+}
+
+
 /* TERCEIRA ABA DO SITE - SERVIÇOS */
 
 .servicos {
@@ -157,65 +150,161 @@ padding-left: 3em;
 	background-color: #323232;
 	color: white;
 	font-family: var(--fonte-principal);
-	padding: 10vh 6vw;
+	padding: 9vh 6vw;
 
 }
+
 
 .servicos h3 {
-	font-size: 1.5vw;
-	padding-bottom: 4vh;
+	font-size: 2vw;
+	padding-bottom: 1vh;
 }
 
-.servicos-card {
+.servicos-mobile{
+	display: none;
+}
+
+
+.servicos-row{
+	padding-top: 5vh;
 	display: flex;
+	justify-content: space-between;
+}
+
+.servicos-row:last-child{
+	padding-top: 5vh;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+
+.servicos-card{
+	text-align: center;
+	border-radius: 1.5vw;
 	background-color: white;
-	color: var(--cinza-principal);
-	font-weight: 200;
-	font-size: 1.1vw;
-	border-radius: 2vw;
+	width: 30%;
+	padding: 0vh 0vh 8.5vh 0vh;
+	transition: .3s;
+}
+
+.servicos-card:hover{
+	cursor: pointer;
+	transform: translateY(-2%);
+}
+
+.servicos-card img{
+	border-radius: 1.5vw 1.5vw 0vw 0vw;
 	width: 100%;
-	
+	height: 90%;
+	margin-bottom: 1vh;
 }
 
-.servicos-card-texto{
-	padding: 5vh 3vw 5vh 5vw;
-	
+.servicos-card div{
+	padding: 2vh 0.5vh 2.6vh 0.5vh;
+}
+
+.servicos-card div a{
+	font-size: 18px;
+	color: var(--cinza-principal);	
+}
+
+.servicos-card #saiba{
+	color: rgb(165, 165, 165);
+	font-size: 16px;
 }
 
 
-.servicos-card-imagem{
-	border-radius: 2vw 0vw 0vw 2vw;
-	width: 45%;
-	box-shadow: #3232326b -20px -20px 50px;
+/*CARD*/
+
+.modal_container{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
 }
 
-/* CARROSSEL */
-
-.swiper-pagination {
-	padding-left: 18vw;
-	padding-bottom: 2vh;
-	
+.modal_container.mostrar{
+    display: flex;
 }
 
-/* .swiper-pagination-bullet {
-    width: 0.7vw;
-    height: 1.4vh;
-	display: inline-block;
+
+.card{
+    background-color: white;
+    width: 42.6%;
+    min-width: 42.5%;
+    border-radius: 10px;
+    position: relative;
+	padding: 1vh;
+}
+
+@keyframes card {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.mostrar .card{
+    animation: card .4s;
+}
+
+.card .fechar{
+    position: absolute;
+    top: -16px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    border: none;
     border-radius: 50%;
-   
+    cursor: pointer;
+    transition: .3s;
+    font-weight: 500;
+    background-color: #5E5E5E;
+    color: white;
 }
 
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin-right: 0.3vw;
-} */
+.card .fechar:hover{
+    background-color: #969696;
+    color: white;
+}
+
+.card h3{
+	text-align: center;
+    padding: 1.5vh;
+    font-size: 25px;
+}
+
+.card p{
+	font-size: 20px;
+	padding: 1.5vh;
+}
+
+.card ul{
+	padding: 1.5vh;
+}
+
+.card ul li{
+	font-size: 20px;
+	padding-left: 2.5vh;
+}
 	
 /* QUARTA ABA DO SITE - CONTATOS */	
 
 .contato{
-	background-color: #f1f1f1;
+	background: url(img/estampaescura.png) #c7c7c7;
 	display: flex;
 	justify-content: space-evenly;
-	padding: 5vh 6vw;
+	padding: 8vh 4vw;
 }
 
 .contato-formulario, .contato-informacoes{
@@ -223,6 +312,7 @@ padding-left: 3em;
 	border-radius: 1vw;
 	width: 30vw;
 	padding: 5vh 2.5vw;
+	box-shadow: #b7b7b785 5px 5px 20px;
 }
 
 .contato-formulario h3, .contato-informacoes h3{
@@ -259,13 +349,13 @@ padding-left: 3em;
 }
 
 .contato-formulario-campos-input:focus{
-	color: #BBBBBB;
+	color: black;
 	font-family: var(--fonte-principal);
 		outline-color: lightgray;			
 }
 	
 .contato-formulario-campos-input:not(:focus) {
-	color: #BBBBBB;
+	color: black;
 	font-family: var(--fonte-principal);
 	outline-color: lightgray;
 }
@@ -293,22 +383,16 @@ padding-left: 3em;
 
 .contato-informacoes-lista li{
 	display: flex;
+	align-items: center;
 	padding: 2vh 0vw;
 }
 
-
-li p::before{
-	content: "";
-	padding: 0vh 0.7vw;
-	background-color: #cf2728;
-	border-radius: 100%;
-	margin-right: 0.8vw;
-}
 
 li p {
 	font-family: var(--fonte-principal);
 	font-size: 1vw;
 	padding: 1vh 1vh;
+	font-weight: 200;
 }
 
 .contato-socialicons{
@@ -350,24 +434,24 @@ footer .rodape{
 	display: flex;
 	justify-content: center;
 	padding: 3.5vh 2.0vw;
-	padding-bottom: 2vh;
+	gap: 0.8vw;
 }
 
 
 
- .icon-rodape .fa-brands{
-	padding: 1.2vh 1.3vh;
-	background-color: #cf2728;
-	border-radius: 50%;
-	margin: 0.7vh;
-	color: white;
-	font-size: 1.5vw;
-}
-
-.icon-rodape .fa-brands:hover{
-	background-color: #ac0f0f;
+.fa-facebook:hover{
+	transform: translateY(-1vh);
 	transition: .3s;
-	cursor: pointer;
+}
+
+.fa-instagram:hover{
+	transform: translateY(-1vh);
+	transition: .3s;
+}
+
+.fa-whatsapp:hover{
+	transform: translateY(-1vh);
+	transition: .3s;
 }
 
 .menu-rodape-abas{
@@ -378,7 +462,7 @@ footer .rodape{
 .menu-rodape{
 	display: flex;
 	justify-content: center;
-	margin-left: 0.2vw;
+	
 }
 
 

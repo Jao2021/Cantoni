@@ -1,53 +1,4 @@
-@media (max-width: 820px) and (max-height: 1024px){
-/* MENU */
-    .logo-cantoni{
-        width: 40%;
-        
-    }
-
-    .menu-abas-items{
-        padding-left: 3em;
-    }
-        
-    .menu-abas-items a{
-        font-family: var(--fonte-principal);
-        font-size: 15px;
-        color: white;
-        text-decoration: none;
-        border-bottom: 1px solid transparent;
-        transition: border-bottom-color 0.2s ease-in-out;
-            
-    }
-
-
-}
-
-@media  (max-width: 690px) {
-    /* MENU */
-        .logo-cantoni{
-            width: 30%;
-            
-        }
-    
-        .menu-abas-items{
-            padding-left: 2em;
-        }
-            
-        .menu-abas-items a{
-            font-family: var(--fonte-principal);
-            font-size: 13px;
-            color: white;
-            text-decoration: none;
-            border-bottom: 1px solid transparent;
-            transition: border-bottom-color 0.2s ease-in-out;
-                
-        }
-    
-    
-}
-
-
-@media  (max-width: 417px) and (max-height: 919px){
+@media  (max-width: 420px) {
     /* MENU */
 
     body{
@@ -110,16 +61,17 @@
     /* PRIMEIRA ABA DO SITE - BANNER */
 
     .banner{
-        height: 70vh;
+        height: 88vh;
         background: url(img/banner-mobile.png) bottom / contain no-repeat #323232;
         display: flex;
         justify-content: center;
+		align-items: flex-start;
+		padding-top: 5vh;
     }
 
     .banner-textos{
-        margin-top: -52vh;
         text-align: center;
-        width: 65%;
+        width: 90%;
         padding-left: 0vw;
         font-family: var(--fonte-principal);
         color: white;
@@ -127,21 +79,21 @@
 
     .banner-titulo {
         font-weight: 400;
-        font-size: 4.2vw;
+        font-size: 9vw;
     }
     
     .banner-subtitulo{
         font-weight: 200;
-        padding: 1em 0 1.5em 0;
-        font-size: 2.8vw;
+        padding: 1em 0 2em 0;
+        font-size: 5vw;
     }
     
     .banner-botao{
-        padding: 0.7em 6vw;
+        padding: 2vw 25vw;
         background-color: var(--vermelho);
         color: white;
         text-decoration: none;
-        font-size: 2.5vw;
+        font-size: 4.5vw;
         border-radius: 0.5em;
         
     }
@@ -151,99 +103,216 @@
 
     .sobre{
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 2vh 6vw;
+		flex-direction: column;
+        align-items: center;  
+        padding: 6vh 3vw 10vh 3vw;
         transition: .2s;
     }
 
     .sobre-texto {
         font-family: var(--fonte-principal);
-        font-size: 1.5vw;
+        font-size: 3vw;
         font-weight: 200;
         line-height: 160%; 
-        width: 45vw;
+        width: 85vw;
     }
+	
+	.sobre-imagem{
+		margin-top: 10vh;
+		width: 60vw;
+		transform: rotate(45deg);
+		box-shadow: #3a3a3a26 0px 5px 20px;
+}
 
     /* TERCEIRA ABA DO SITE - SERVIÇOS */
 
     .servicos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         background-color: #323232;
         color: white;
         font-family: var(--fonte-principal);
-        padding: 2vh 6vw;
-    
+        padding: 5vh 6vw;   
     }
 
     .servicos h3 {
-        font-size: 1.5vw;
-        padding-bottom: 1vh;
+        font-size: 5vw;
+        padding-bottom: 2vh;
     }
 
-    .servicos-card-texto{
-        padding: 2vh 3vw 4.6vh 5vw;
-        
+    .servicos-row{
+        display: none;
     }
 
-    /* QUARTA ABA DO SITE - CONTATOS */	
+    .servicos-mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .servicos-card{
+        margin-top: 4vh;
+        text-align: center;
+        border-radius: 1.5vw;
+        background-color: white;
+        width: 95%;
+        padding: 0vh 0vh 5vh 0vh;
+        transition: .3s;
+    }
+
+    .servicos-card div{
+        padding: 2vh 0.5vh 2.6vh 0.5vh;
+    }
+    
+    .servicos-card div a{
+        font-size: 18px;
+        color: var(--cinza-principal);	
+    }
+    
+    .servicos-card #saiba{
+        color: rgb(165, 165, 165);
+        font-size: 16px;
+    }
+
+    /*CARD*/
+
+.modal_container{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_container.mostrar{
+    display: flex;
+}
+
+
+.card{
+    background-color: white;
+    width: 80%;
+    min-width: 42.5%;
+    border-radius: 10px;
+    position: relative;
+	padding: 1vh;
+}
+
+@keyframes card {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.mostrar.card{
+    animation: card .4s;
+}
+
+.card .fechar{
+    position: absolute;
+    top: -16px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s;
+    font-weight: 500;
+    background-color: #5E5E5E;
+    color: white;
+}
+
+.card .fechar:hover{
+    background-color: #969696;
+    color: white;
+}
+
+.card h3{
+	text-align: center;
+    padding: 1.5vh;
+    font-size: 17px;
+}
+
+.card p{
+	font-size: 14px;
+	padding: 1.5vh;
+}
+
+
+.card ul li{
+	font-size: 15px;
+	padding-left: 2.5vh;
+}
+
+/* QUARTA ABA DO SITE - CONTATOS */	
 
 
     .contato{
-        background-color: #f1f1f1;
-        display: flex;
-        flex-direction: column;
-        padding: 5vh 6vw;
+     flex-direction: column;
+	 align-items: center;
+     padding: 5vh 1vw;
+	 
     }
 
     .contato-formulario, .contato-informacoes{
-        background-color: #ffffff;
-        border-radius: 1vw;
-        width: 30vw;
-        padding: 3vh 2.5vw;
+     width: 85vw;
+     padding: 3vh 4vw;
+	 margin-bottom: 2vh;
+	 border-radius: 3vw;
+	
+ 	
     }
 
+	.contato-formulario h3, .contato-informacoes h3{
+	font-size: 5vw;
+	
+	}	
+
+	.contato-informacoes h3{
+		border-bottom: 0.3vw red solid;
+		width: 50%;
+	}
+	
     .contato-formulario-campos-input{
-        padding: 0.5vh;
-        font-size: 8px;
-        margin-bottom: 1vh;
-        border-radius: 0.3vw;
-        border: none;
-        background-color: #ebebeb;
-        
+        padding: 1.5vh;
+        font-size: 3vw;
+             
     }
 
     .contato-formulario-campos-botao{
-        background-color: var(--vermelho);
-        color: white;
-        padding: 1vh;
         border-radius: 2vw;
-        border: none;
-        font-family: var(--fonte-principal);
-        font-size: 1.5vw;
+        font-size: 4vw;
         margin-top: 1vh;
-    }
-
-
-    li p::before{
-        content: "";
-        padding: 0vh 0.8vw;
-        background-color: #cf2728;
-        border-radius: 100%;
-        margin-right: 0.8vw;
     }
 
 
     .contato-informacoes-lista li{
         display: flex;
-        padding: 0.1vh 0vw;
+        padding: 1vh 0vw;
     }
 
     .contato-informacoes-lista li p {
         font-family: var(--fonte-principal);
-        font-size: 1.3vw;
+        font-size: 3.5vw;
         padding: 1vh 1vh;
     }
 
+	.contato-informacoes-lista img{
+		width: 7%;	
+	}
+	
     .contato-socialicons{
         margin-top: 2vh;
     }
@@ -265,174 +334,20 @@
     }
 
     footer .rodape{
-        display: grid;
-        justify-content: center;
-        padding: 5vh 6vw;
-    }
-
-    .icon-rodape .fa-brands{
-        padding: 1.1vh 1.1vh;
-        background-color: #cf2728;
-        border-radius: 50%;
-        margin: 0.7vh;
-        color: white;
-        font-size: 3.5vw;
-    }
-
-    .menu-rodape-abas{
         display: flex;
-        justify-content: center;
-        padding-left: 1vw;
+		padding: 5vh 6vw;
+		flex-direction: column;
+    	align-items: center;
     }
 
+    .icon-rodape{
+   	  gap: 5vw;
+    }
+    
     .rodape-items{
         padding-left: 2vw;
     }
     
-    .rodape-items a{
-        font-weight: 300;
-        font-family: var(--fonte-principal);
-        color: white;
-        text-decoration: none;
-        border-bottom: 1px solid transparent;
-        transition: border-bottom-color 0.2s ease-in-out;
-    }
-    
-    .rodape-items a:hover{
-        border-bottom: 1px var(--vermelho) solid;
-    }
-
 }
 
-@media  (max-width: 395px) and (max-height: 852px){
-    /* PRIMEIRA ABA DO SITE - BANNER */
 
-    .banner{
-        height: 75vh;
-        background: url(img/banner-mobile.png) bottom / contain no-repeat #323232;
-        display: flex;
-        justify-content: center;
-    }
-
-    .banner-textos{
-        margin-top: -55vh;
-        text-align: center;
-        width: 65%;
-        padding-left: 0vw;
-        font-family: var(--fonte-principal);
-        color: white;
-    }
-
-    .banner-titulo {
-        font-weight: 400;
-        font-size: 4.2vw;
-    }
-    
-    .banner-subtitulo{
-        font-weight: 200;
-        padding: 1em 0 1.5em 0;
-        font-size: 2.8vw;
-    }
-    
-    .banner-botao{
-        padding: 0.7em 6vw;
-        background-color: var(--vermelho);
-        color: white;
-        text-decoration: none;
-        font-size: 2.5vw;
-        border-radius: 0.5em;
-        
-    }
-
-    
-}
-
-@media  (max-width: 395px) and (max-height: 852px){
-    /* PRIMEIRA ABA DO SITE - BANNER */
-
-.banner{
-    height: 90vh;
-    background: url(img/banner-mobile.png) bottom / contain no-repeat #323232;
-    display: flex;
-    justify-content: center;
-}
-
-.banner-textos{
-    margin-top: -65vh;
-    text-align: center;
-    width: 65%;
-    padding-left: 0vw;
-    font-family: var(--fonte-principal);
-    color: white;
-}
-
-.banner-titulo {
-    font-weight: 400;
-    font-size: 4.2vw;
-}
-
-.banner-subtitulo{
-    font-weight: 200;
-    padding: 1em 0 1.5em 0;
-    font-size: 2.8vw;
-}
-
-.banner-botao{
-    padding: 0.7em 6vw;
-    background-color: var(--vermelho);
-    color: white;
-    text-decoration: none;
-    font-size: 2.5vw;
-    border-radius: 0.5em;
-    
-}
-}
-
-@media  (max-width: 360px) and (max-height: 740px){
-    .banner{
-        height: 75vh;
-        background: url(img/banner-mobile.png) bottom / contain no-repeat #323232;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .banner-textos{
-        margin-top: -57vh;
-        text-align: center;
-        width: 65%;
-        padding-left: 0vw;
-        font-family: var(--fonte-principal);
-        color: white;
-    }
-
-    .banner-titulo {
-        font-weight: 400;
-        font-size: 4.2vw;
-    }
-    
-    .banner-subtitulo{
-        font-weight: 200;
-        padding: 1em 0 1.5em 0;
-        font-size: 2.8vw;
-    }
-    
-    .banner-botao{
-        padding: 0.7em 6vw;
-        background-color: var(--vermelho);
-        color: white;
-        text-decoration: none;
-        font-size: 2.5vw;
-        border-radius: 0.5em;
-        
-    }
-
-    .rodape-items a{
-        font-weight: 300;
-        font-family: var(--fonte-principal);
-        color: white;
-        font-size: 12px;
-        text-decoration: none;
-        border-bottom: 1px solid transparent;
-        transition: border-bottom-color 0.2s ease-in-out;
-    }
-}
