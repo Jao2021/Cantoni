@@ -123,6 +123,7 @@ padding-left: 3em;
 	justify-content: space-between;
 	padding: 8vh 12vw 8vh 8vw;
 	transition: .2s;
+	background-color: white;
 }
 
 .sobre-texto {
