@@ -169,13 +169,13 @@ padding-left: 3em;
 .servicos-row{
 	padding-top: 5vh;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 }
 
 .servicos-row:last-child{
 	padding-top: 5vh;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
 }
 
 
@@ -183,9 +183,10 @@ padding-left: 3em;
 	text-align: center;
 	border-radius: 1.5vw;
 	background-color: white;
-	width: 30%;
-	padding: 0vh 0vh 8.5vh 0vh;
+	width: 25%;
+	padding: 0vh 0vh 7vh 0vh;
 	transition: .3s;
+	margin: 0vh 5vh;
 }
 
 .servicos-card:hover{
@@ -206,12 +207,14 @@ padding-left: 3em;
 
 .servicos-card div a{
 	font-size: 18px;
+	font: var(--fonte-principal);
 	color: var(--cinza-principal);	
 }
 
 .servicos-card #saiba{
 	color: rgb(165, 165, 165);
 	font-size: 16px;
+	font: var(--fonte-principal);
 }
 
 
@@ -282,12 +285,14 @@ padding-left: 3em;
 .card h3{
 	text-align: center;
     padding: 1.5vh;
-    font-size: 25px;
+    font-size: 10vh;
+	font: var(--fonte-principal);
 }
 
 .card p{
 	font-size: 20px;
 	padding: 1.5vh;
+	font: var(--fonte-principal);
 }
 
 .card ul{
@@ -297,6 +302,7 @@ padding-left: 3em;
 .card ul li{
 	font-size: 20px;
 	padding-left: 2.5vh;
+	font: var(--fonte-principal);
 }
 	
 /* QUARTA ABA DO SITE - CONTATOS */	

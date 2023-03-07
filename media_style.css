@@ -152,13 +152,14 @@
     }
 
     .servicos-card{
-        margin-top: 4vh;
+        margin-top: 4vh !important;
         text-align: center;
         border-radius: 1.5vw;
         background-color: white;
-        width: 95%;
+        width: 100%;
         padding: 0vh 0vh 5vh 0vh;
         transition: .3s;
+        margin: 0;
     }
 
     .servicos-card div{
@@ -167,10 +168,12 @@
     
     .servicos-card div a{
         font-size: 18px;
+        font: var(--fonte-principal);
         color: var(--cinza-principal);	
     }
     
     .servicos-card #saiba{
+        font: var(--fonte-principal);
         color: rgb(165, 165, 165);
         font-size: 16px;
     }
@@ -243,11 +246,13 @@
 	text-align: center;
     padding: 1.5vh;
     font-size: 17px;
+    font: var(--fonte-principal);
 }
 
 .card p{
 	font-size: 14px;
 	padding: 1.5vh;
+    font: var(--fonte-principal);
 }
 
 
