@@ -1,4 +1,4 @@
-html{ 
+html{  
     scroll-behavior: smooth;
 }
 
@@ -183,8 +183,8 @@ padding-left: 3em;
 	text-align: center;
 	border-radius: 1.5vw;
 	background-color: white;
-	width: 25%;
-	padding: 0vh 0vh 7vh 0vh;
+	width: 28%;
+	padding: 0vh 0vh 8vh 0vh;
 	transition: .3s;
 	margin: 0vh 5vh;
 }
