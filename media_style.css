@@ -157,13 +157,13 @@
         border-radius: 1.5vw;
         background-color: white;
         width: 100%;
-        padding: 0vh 0vh 5vh 0vh;
+        padding: 0vh 0vh 3vh 0vh;
         transition: .3s;
         margin: 0;
     }
 
     .servicos-card div{
-        padding: 2vh 0.5vh 2.6vh 0.5vh;
+        padding: 1vh 0.5vh 1vh 0.5vh;
     }
     
     .servicos-card div a{
@@ -356,3 +356,13 @@
 }
 
 
+@media  (max-width: 376px) {
+    .banner{
+        height: 107vh;
+    }
+
+    footer{
+        height: 32vh;
+        background-color: var(--cinza-escuro);
+    }
+}

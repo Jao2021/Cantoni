@@ -1,4 +1,4 @@
-html{  
+html{ 
     scroll-behavior: smooth;
 }
 
@@ -181,12 +181,12 @@ padding-left: 3em;
 
 .servicos-card{
 	text-align: center;
-	border-radius: 1.5vw;
+	border-radius: 1vw;
 	background-color: white;
-	width: 28%;
-	padding: 0vh 0vh 8vh 0vh;
+	width: 25%;
+	padding: 0vh 0vh 6vh 0vh;
 	transition: .3s;
-	margin: 0vh 5vh;
+	margin: 0vh 2vh;
 }
 
 .servicos-card:hover{
@@ -195,18 +195,18 @@ padding-left: 3em;
 }
 
 .servicos-card img{
-	border-radius: 1.5vw 1.5vw 0vw 0vw;
+	border-radius: 1vw 1vw 0vw 0vw;
 	width: 100%;
 	height: 90%;
 	margin-bottom: 1vh;
 }
 
 .servicos-card div{
-	padding: 2vh 0.5vh 2.6vh 0.5vh;
+	padding: 1vh 0.5vh 1vh 0.5vh;
 }
 
 .servicos-card div a{
-	font-size: 18px;
+	font-size: 17px;
 	font: var(--fonte-principal);
 	color: var(--cinza-principal);	
 }
@@ -297,6 +297,7 @@ padding-left: 3em;
 
 .card ul{
 	padding: 1.5vh;
+	font: var(--fonte-principal);
 }
 
 .card ul li{
