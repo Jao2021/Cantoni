@@ -309,6 +309,7 @@ padding-left: 3em;
 	
 /* QUARTA ABA DO SITE - CONTATOS */	
 
+
 .contato{
 	background: url(img/estampaescura.png) #c7c7c7;
 	display: flex;
@@ -424,7 +425,9 @@ li p {
 }
 
 
-
+.contato-local iframe{
+	width: 100%;
+}
 
 /* QUINTA ABA DO SITE - RODAPE */	
 
