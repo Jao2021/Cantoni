@@ -18,7 +18,7 @@ html{
 	position: fixed;
 	left: 92%;
 	bottom: 5%;
-	padding: 25px;
+	padding: 18px;
 	background-color: rgb(17, 212, 17);
 	border-radius: 50%;
 	z-index: 1000000;
@@ -26,7 +26,7 @@ html{
 
 .btn-wpp i{
 	color: white;
-	font-size: 50px;
+	font-size: 40px;
 }
 
 .btn-wpp:hover{

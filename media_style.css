@@ -4,16 +4,15 @@
         position: fixed;
         left: 75%;
         bottom: 5%;
-        padding: 25px;
-        background-color: rgb(17, 212, 17);
-        border-radius: 50%;
+        padding: 18px;
         z-index: 1000;
     }
     
     .btn-wpp i{
         color: white;
-        font-size: 45px;
+        font-size: 40px;
     }
+
     
 
     .servicos-card{
@@ -55,6 +54,20 @@
     body{
         overflow-x: hidden;
     }
+
+    .btn-wpp{
+        position: fixed;
+        left: 75%;
+        bottom: 5%;
+        padding: 18px;
+        z-index: 1000;
+    }
+    
+    .btn-wpp i{
+        color: white;
+        font-size: 40px;
+    }
+
 
     .logo-cantoni{
         width: 60%; 
@@ -159,7 +172,7 @@
 
     .sobre-texto {
         font-family: var(--fonte-principal);
-        font-size: 3vw;
+        font-size: 4vw;
         font-weight: 200;
         line-height: 160%; 
         width: 85vw;
@@ -405,6 +418,19 @@
 
 
 @media  (max-width: 376px) {
+    .btn-wpp{
+        position: fixed;
+        left: 75%;
+        bottom: 5%;
+        padding: 18px;
+        z-index: 1000;
+    }
+    
+    .btn-wpp i{
+        color: white;
+        font-size: 40px;
+    }
+
     .banner{
         height: 107vh;
     }
