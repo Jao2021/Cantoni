@@ -38,11 +38,13 @@ html{
 
 .menu-abas{
 	display: flex;
+
 	
 }
 
 .menu-abas-items{
-padding-left: 3em;
+	padding-left: 3em;
+	padding-top: 1.5vh;
 }
 
 .menu-abas-items a{
@@ -68,6 +70,25 @@ padding-left: 3em;
 
 .contatar a:hover, .banner-botao:hover{
 	background-color: var(--vermelho-hover);
+}
+
+
+
+.menu-abas-items-wpp{
+	padding-left: 1.5vw;
+}
+
+.menu-abas-items-wpp a{
+	font-weight: 300;
+	font-family: var(--fonte-principal);
+	color: green;
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+}
+
+.menu-abas-items-wpp .fa-whatsapp:hover{
+	transform: translateY(-0.3vh);
+	transition: .3s;
 }
 
 
@@ -461,7 +482,7 @@ footer .rodape{
 	transition: .3s;
 }
 
-.fa-whatsapp:hover{
+.icon-rodape .fa-whatsapp:hover{
 	transform: translateY(-1vh);
 	transition: .3s;
 }
