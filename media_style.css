@@ -1,6 +1,20 @@
 @media (max-width: 1401px) {
 
-   
+    .btn-wpp{
+        position: fixed;
+        left: 75%;
+        bottom: 5%;
+        padding: 25px;
+        background-color: rgb(17, 212, 17);
+        border-radius: 50%;
+        z-index: 1000;
+    }
+    
+    .btn-wpp i{
+        color: white;
+        font-size: 45px;
+    }
+    
 
     .servicos-card{
         text-align: center;

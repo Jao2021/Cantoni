@@ -14,6 +14,25 @@ html{
 }
 
 /* MENU DO SITE */
+.btn-wpp{
+	position: fixed;
+	left: 92%;
+	bottom: 5%;
+	padding: 25px;
+	background-color: rgb(17, 212, 17);
+	border-radius: 50%;
+	z-index: 1000000;
+}
+
+.btn-wpp i{
+	color: white;
+	font-size: 50px;
+}
+
+.btn-wpp:hover{
+	background-color: rgb(13, 170, 13);
+	transition: .3s;
+}
 
 .menu {
 	background-color: var(--cinza-escuro);
@@ -44,7 +63,6 @@ html{
 
 .menu-abas-items{
 	padding-left: 3em;
-	padding-top: 1.5vh;
 }
 
 .menu-abas-items a{
@@ -74,22 +92,6 @@ html{
 
 
 
-.menu-abas-items-wpp{
-	padding-left: 1.5vw;
-}
-
-.menu-abas-items-wpp a{
-	font-weight: 300;
-	font-family: var(--fonte-principal);
-	color: green;
-	text-decoration: none;
-	border-bottom: 1px solid transparent;
-}
-
-.menu-abas-items-wpp .fa-whatsapp:hover{
-	transform: translateY(-0.3vh);
-	transition: .3s;
-}
 
 
 .logo-cantoni{
