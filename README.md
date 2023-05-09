@@ -1,3 +1,3 @@
-# Cantoni - Engenharia
+# Cantoni Engenharia
 
 Projeto Freelancer, criação de website
